@@ -34,7 +34,7 @@ class LocaleManager {
       zh: {
         // Navigation
         localeBtn: 'English',
-        bookNow: '立即预约',
+        bookNow: '微信预约',
         
         // Hero Section
         heroTitle: '专业美甲护理服务',
@@ -46,7 +46,7 @@ class LocaleManager {
         loadMore: '加载更多',
         
         // Contact
-        contactTitle: '联系我们',
+        contactTitle: '预约/联系方式',
         wechat: '微信:',
         location: '地址:',
         
