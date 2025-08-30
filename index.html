@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nail Cabin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="./assets/logo.jpg" type="image/jpeg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="./assets/logo.jpg" alt="Nail Cabin Logo" class="logo" />
+      </div>
+      <div class="brand-text">
+        <span class="brand-name-en">The Nail Cabin</span>
+        <span class="brand-name-en">小木屋美甲</span>
+      </div>
+
+      <div class="cta-group">
+        <a class="cta" href="#contact">Book Now</a>
+        <button class="locale-btn" id="localeBtn">中文</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Slider -->
+  <section class="hero" aria-roledescription="carousel" aria-label="Featured designs">
+    <div class="slider" id="slider" tabindex="0">
+      <div class="slides" id="slides">
+        <article class="slide" aria-label="Pastel Gel Collection">
+          <img src="./assets/hero/promotion1.jpg" />
+        </article>
+        <article class="slide" aria-label="Minimal Nail Art">
+          <img src="./assets/hero/promotion2.jpg" />
+        </article>
+        <article class="slide" aria-label="Spa & Nail Health">
+          <img src="./assets/hero/promotion3.jpg" />
+        </article>
+      </div>
+      <button class="arrow prev" aria-label="Previous slide" id="prev">&#10094;</button>
+      <button class="arrow next" aria-label="Next slide" id="next">&#10095;</button>
+      <div class="slider-controls" role="tablist" aria-label="Slide selector">
+        <button class="dot" role="tab" aria-current="true" data-index="0"></button>
+        <button class="dot" role="tab" data-index="1"></button>
+        <button class="dot" role="tab" data-index="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" aria-labelledby="gallery-title">
+    <h2 id="gallery-title">Nail Gallery</h2>
+    <div class="grid" id="gallery">
+    </div>
+    <button id="loadMoreBtn">Load More</button>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Image viewer">
+    <button class="close" id="close" aria-label="Close">×</button>
+    <img id="lightboxImg" alt="Expanded view" />
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p><strong>WeChat:</strong> xiamuwu888</p>
+      <p><strong>Location:</strong> 15 Grenville Street, Toronto, ON</p>
+    </div>
+    <p class="copyright">© <span id="year"></span> Nail Cabin • Made with ♥</p>
+  </footer>
+
+  <script src="./locale.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
